@@ -63,8 +63,6 @@ public class HotelManagementRepository {
 
         Hotel hotel = hotelmap.get(booking.getHotelName());
 
-       // int price = hotel.getPricePerNight();
-
         if(booking.getNoOfRooms() > hotel.getAvailableRooms())
         {
             return -1;
